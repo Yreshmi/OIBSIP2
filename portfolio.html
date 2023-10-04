@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Portfolio</title>
+    <style>
+    body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color:lightgray;
+    }
+    
+    header {
+        background-color: burlywood;
+        color:black;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: lavender;
+        font-weight: bold;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .project {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .project img {
+        max-width: 100%;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    html{
+        scroll-behavior: smooth;
+        scrollbar-color: red;
+    }
+    #img{
+        border-color: #333;
+    
+    }
+    #sss{
+        text-align: center;
+    }
+    #edu{
+        text-align: center;
+    }
+    #skills{
+        text-align: center;
+        background-color:beige;
+    }
+   
+    #pp{
+        font-size: large;
+    }
+    .boxes{
+        text-align: center;
+    }
+    form {
+    margin-top: 20px;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+</style>
+</head>
+<body>
+   
+
+    <header>
+        <h1>Yaganti Reshmi Aparna</h1>
+        <nav>
+            <ul>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#form">Contact</a></li>
+                <li><a href="#skills">skillsfield</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+            <h1 class="headings">ABOUT ME</h1><br>
+            
+                <img id="img" src="data:image/png;base64,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" alt="reshmi">
+                    <div class = "boxes"> 
+                        <p>
+                            Hey there! I'm Reshmi. I'm from jrg, Andhra Pradesh and I'm currently pursuing my Bachelors' degree in Artificial Intelligence and Data Science from the vishnu institute of technology.
+                        </p>
+                        <h3>connect with me on</h3>
+                        <p><a href="https://www.linkedin.com/in/yaganti-reshmi-aparna-617213241/" >linkedIn</a></p>
+                        <p><a href="https://github.com/Yreshmi">Github</a></p>
+                    </div>
+                
+                   
+    </section>
+
+    <section id="projects">
+ <div id="sss">
+         <h2>projects</h2><br>
+         <div class="project">
+             <img src="#" alt="Project-1">
+             <h3>PYTHON FOR DATA SCIENCE</h3><br><br>
+             <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2019/09/11134058/What-is-data-science-2.jpg">
+             <p id="pp">I had taken Titanic dataset and used logistic regression technique to get resultant data with no noises etc and to make it look more understandable i used visualisation techinques on it .</p>
+             <p id="pp">Python is a programming language widely used by Data Scientists. Python has in-built mathematical libraries and functions, making it easier to calculate mathematical problems and to perform data analysis.<br><br>Data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data.  </p>
+         </div>
+     </section>
+     <section id="Education">
+        <div id="edu">
+         <h1 class="Education">EDUCATION</h1><br>
+                 <div class="sss">
+                     <h3>lotus high school(cbse)</h3>
+                     <span class="education-date" >March 2019</span>
+                     <h4>Class 10</h4>
+                 </div><br>
+                 <div class="education-block-2">
+                     <h3>NRI</h3><br>
+                     <span class="education-date">March 2021</span><br>
+                     <h4>Intermediate</h4><br>
+                 </div><br> 
+                 <div class="education-block-3">
+                     <h3>Vishnu Institute of Technology</h3><br>
+                     <span class="education-date">Dec 2021 - May 2025</span><br>
+                     <h4>Bachelors of Technology in Artificial Intelligence and Data Science</h4><br>
+                 </div><br>      
+     </section>
+     <section>
+         <div id="skills">
+             <h1 class="heading">Skills</h1><br><br>
+             <nav class="skillsfield">
+             <ul>
+                 <li>Python</li>
+                 <li>python for Data science</li>
+                 <li>Html & css</li>
+                 <li>java</li>
+             </ul>
+             </nav>
+         </div>
+     </section>
+
+     <section id="form">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to get in touch with me:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+ </div>
+     <footer>
+         <p>copyright @copy 2023 reshmi yaganti</p>
+     </footer>
+</body>
+</html>
